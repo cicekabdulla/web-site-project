@@ -1,0 +1,51 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 800;
+    margin-bottom: 5rem;
+}
+
+#offer,
+#services,
+#examples {
+    padding: 7.2rem 0;
+}
+
+@media(max-width:768px) {
+
+    #offer,
+    #services,
+    #examples {
+        padding: 5.8rem 0;
+
+        h2 {
+            margin-bottom: 3.9rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media(max-width:576px) {
+
+    #offer,
+    #services,
+    #examples {
+        padding: 5.1rem 0;
+    }
+}

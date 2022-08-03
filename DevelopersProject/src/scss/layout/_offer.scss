@@ -1,0 +1,45 @@
+#offer {
+    background-color: $c-light-cyan;
+
+    .offer__item {
+        background-color: $c-white;
+        border-radius: 14px;
+        padding: 1.2rem 2.1rem;
+        margin-bottom: 0.6rem;
+
+        h5 {
+            margin-bottom: 0;
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    #offer {
+        .offer__item {
+            padding: 1.2rem 1.1rem;
+        }
+
+        h2 {
+            margin-bottom: 3.9rem;
+            font-size: 1.5rem;
+        }
+
+        h5 {
+            font-size: 1.1rem;
+            margin-left: 1.1rem;
+        }
+
+        img {
+            width: 20px
+        }
+    }
+}
+
+@media(max-width:576px) {
+    #offer {
+        .offer__item {
+            padding: 1rem 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+footer {
+    background-color: $c-blue;
+    padding: 7rem 0 5rem 0;
+
+    p {
+        color: $c-white;
+        margin-bottom: 0;
+        text-transform: capitalize;
+
+        &.footer__reserved {
+            margin-top: 7rem;
+        }
+
+        &.hr {
+            text-transform: lowercase;
+        }
+    }
+
+    a {
+        margin-right: 27px;
+    }
+}
+
+@media(max-width:992px) {
+    footer {
+        p {
+            &.footer__reserved {
+                margin-top: 4rem;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    footer {
+        padding: 5rem 0 4rem 0;
+        .logo{
+            width:200px;
+        }
+    }
+}
+

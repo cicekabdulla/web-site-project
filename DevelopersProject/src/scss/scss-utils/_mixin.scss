@@ -1,0 +1,22 @@
+%main__btn {
+    a {
+        background-color: $c-green;
+        border-radius: 5px;
+        padding: 1.1rem 6rem;
+        text-transform: uppercase;
+        border: 2px solid $c-green;
+        transition: all .2s ease;
+        display: inline-block;
+        color: $c-white;
+        font-weight: 500;
+        margin-top: 46px;
+
+        &:hover {
+            border: 2px solid $c-blue;
+        }
+
+        &:active {
+            background-color: $c-blue;
+        }
+    }
+}
