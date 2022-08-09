@@ -1,0 +1,8 @@
+@import "default";
+.Blog {
+    @extend %Bg;
+    @extend %Blog;
+}
+.Section{
+    @extend %Blogs;
+}

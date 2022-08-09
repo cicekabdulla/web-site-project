@@ -1,0 +1,355 @@
+@import "default";
+
+
+$white: #fff;
+$black: #000;
+$gray: #959595;
+
+body,
+#slider,
+.wrap,
+.slide {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 540px;
+    overflow-x: hidden;
+}
+.wrap {
+    position: relative;
+    .slide {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .Slide {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 540px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .slide-content {
+        background-color: rgba(255, 255, 255, 0.81);
+        height: 350px;
+        width: 640px;
+        margin-left: 216px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+            padding: 0px 94px 14px 94px;
+            color: $gray;
+        }
+        span {
+            font-size: 40px;
+        }
+        h6 {
+            text-transform: uppercase;
+            color: #5c5c5c;
+            letter-spacing: 0.5px;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-size: 49px;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 2px;
+        }
+        a {
+            color: $black;
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            background-color: transparent;
+            letter-spacing: 1px;
+            padding: 9px 50px;
+            border: 1px solid $black;
+            text-decoration: none;
+            transition: all 0.2s linear;
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+        }
+    }
+    .slide1 {
+        background-image: url("https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/slider-img-1.jpg");
+    }
+    .slide2 {
+        background-image: url("https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/slider-img-2-4.jpg");
+    }
+    .slide3 {
+        background-image: url("https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/slider-img-3.jpg");
+    }
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 44%;
+        height: 53px;
+        padding: 13px 15px 0 12px;
+        border: 1px solid $black;
+        background-color: $black;
+        color: $white;
+    }
+    .arrow i {
+        font-size: 20px;
+    }
+    #arrow-left {
+        left: 0;
+        border-radius: 0 15px 15px 0;
+    }
+    #arrow-right {
+        right: 0;
+        border-radius: 15px 0 0 15px;
+    }
+}
+
+.Images {
+    padding: 20px 30px;
+    img {
+        width: 100%;
+        transition: all 0.3s linear;
+    }
+    .Image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        &:hover {
+            .Text {
+                opacity: 1;
+                visibility: visible;
+            }
+            img {
+                transform: scale(1.075);
+            }
+        }
+        .Text {
+            position: absolute;
+            transition: all 0.2s linear;
+            opacity: 0;
+            visibility: hidden;
+            h3 {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                transition: all 0.2s linear;
+            }
+            a {
+                text-decoration: none;
+                span {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    border-bottom: 1.4px solid;
+                    color: #7a7878;
+                    font-weight: 700;
+                    padding-bottom: 2px;
+                    transition: all 0.2s linear;
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Products {
+   @extend %Product;
+}
+
+
+#Beauty {
+    margin: 0 88px;
+    padding: 76px 0;
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        margin-top: 8px;
+    }
+    p {
+        color: $gray;
+    }
+}
+
+#News {
+    .Pic {
+        background-image: url(https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/single-img-2.jpg);
+        height: 70vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 28px 24px 50px 24px;
+        .Pic-text {
+            height: 350px;
+            width: 540px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.81);
+            h6 {
+                color: #5c5c5c;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+            h2 {
+                color: $black;
+                font-family: "Poppins", sans-serif;
+                font-size: 38px;
+                line-height: 50px;
+                font-weight: 900;
+                letter-spacing: 2.6px;
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+            input {
+                &.Email {
+                    background-color: rgba(255, 255, 255, 1);
+                    border-color: rgba(255, 255, 255, 1);
+                    border-width: 1px;
+                    border-style: solid;
+                    color: $gray;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    padding: 9px 10px 9px 24px;
+                }
+                &.Subs {
+                    background-color: rgba(0, 0, 0, 1);
+                    border-color: rgba(0, 0, 0, 1);
+                    border-width: 1px;
+                    color: #ffffff;
+                    font-family: Lato;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    line-height: 39px;
+                    padding: 0 34px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .wrap {
+        .Slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .slide-content {
+                margin-left: 0;
+            }
+        }
+    }
+    #Beauty {
+        margin: 0 40px;
+    }
+}
+@media (max-width: 992px) {
+    .Images {
+        .Image {
+            padding-bottom: 25px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    #Beauty {
+        p {
+            padding-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .wrap {
+        .slide-content {
+            height: 222px;
+            width: 356px;
+        }
+        .Content {
+            h6 {
+                font-size: 14px;
+            }
+            h2 {
+                letter-spacing: 2px;
+                font-size: 28px;
+                margin-bottom: 26px;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+    .Image {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .Images {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #Products {
+        h2 {
+            font-size: 26px !important;
+        }
+        h6 {
+            font-size: 13px;
+        }
+        .Product {
+            img {
+                width: 56% !important;
+            }
+            h5 {
+                a {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    #Beauty {
+        h4 {
+            font-size: 17px;
+        }
+    }
+    #News {
+        .Pic {
+            margin: 0 !important;
+            .Pic-text {
+                margin: 20px 20px;
+                h2 {
+                    font-size: 27px;
+                    line-height: 32px;
+                }
+                h6 {
+                    font-size: 12px;
+                }
+            }
+            input {
+                &.Email {
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+   
+}

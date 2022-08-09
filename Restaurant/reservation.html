@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <script src="https://kit.fontawesome.com/2ca186067a.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="Head col-lg-12 p-0">
+
+            <div class="Header-Resp">
+                <div class="container">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-4 col-sm-4 col-3">
+                            <div class="Menu-bar">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-6 text-center">
+                            <div class="Logoo">
+                                <h4>Foodland
+                                    <p>Restoran</p>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-3 text-right">
+                            <div class="Cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="Top-bar-left">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>
+                                    2 Z.Əhmədbəyov küç,
+                                    Baku</span>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>
+                                    +994 51 302 00 66</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <div class="Top-bar-right">
+                                <span>Bizimlə əlaqə</span>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Header">
+                <div class="container">
+                    <div class="row h-100 align-items-center ">
+                        <div class="col-lg-4 mb-0">
+                            <div class="Logo">
+                                <h4>Foodland
+                                    <p>Restoran</p>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 text-right">
+                            <div class="Navbar">
+                                <ul class="row justify-content-end mb-0">
+                                    <li><a href="index.html">Əsas Səhifə</a></li>
+                                    <li class="Main"><a href="">Menyu</a><i class="fas fa-chevron-down"></i>
+                                        <div class="Sub-Menu">
+                                            <ul>
+                                                <li><a href="azmetb.html">Azərbaycan Mətbəxi</a></li>
+                                                <li><a href="turk.html">Türk Mətbəxi</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="Main"><a href="">Restoranımız</a><i class="fas fa-chevron-down"></i>
+                                        <div class="Sub-Menu">
+                                            <ul>
+                                                <li><a href="genclik.html">Gənclik Filialı</a></li>
+                                                <li><a href="filialf.html">Sahil Filialı</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="contact.html">Bizimlə Əlaqə</a></li>
+                                    <li><a href="#" class="active">Rezervasiya</a></li>
+                                    <!-- <li><i class="fas fa-cart-plus"></i></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="Resv">
+        <div class="Form col-lg-4 col-md-6 col-sm-6 col-8">
+            <form action="#" method="post">
+                <div class="personal">
+                    <input type="text" placeholder="Ad" class="Input" required>
+                    <input type="email" placeholder="Email" class="Input" required>
+                    <input type="text" placeholder="Telefon Nömrəsi" class="Input">
+                    <input id="datetime" placeholder="Sifariş Tarixi və Vaxtı" class="Input">
+                    <select class="Input form-control">
+                        <option value>Böyüklərin Sayı</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>və daha çox</option>
+                    </select>
+                    <select class="Input form-control">
+                        <option value>Uşaqların Sayı</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>və daha çox</option>
+                    </select>
+                    <div class="Button">
+                        <input type="submit" value="Rezerv Edin">
+                    </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div id="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                    <h2>Bizimlə Əlaqə</h2>
+                    <ul>
+                        <li> 2 Z.Əhmədbəyov küç,
+                            Baku</li>
+                        <li>+994 51 302 00 66</li>
+                        <li>Bazar Ertəsi - Cümə: 09:00 - 22:00</li>
+                        <li>Şənbə - Bazar:10:00 - 23:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                    <h2 class="SecondH">Bizi İzləyin</h2>
+                    <a class="Fb" href="https://www.facebook.com/webworld.az/"> <i class="fab fa-facebook-f"></i></a>
+                    <a class="Inst" href="https://www.instagram.com/webworld.az/"> <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Bottom-bar text-center">
+        <p>
+            Müəllif hüquqları © 2020 FoodLand. Bütün hüquqlar qorunur.
+        </p>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $("#datetime").datetimepicker();
+        
+        $(document).ready(function(){
+            $('.Menu-bar').click(function(){
+               $('.Navbar').toggleClass('activeM')
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@import "default";
+
+.Faq {
+    background-image: url(https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/faq-img-1.jpg);
+    @extend %Bg;
+}
+.Questions {
+    margin: 140px 60px;
+    h6 {
+        color: #5c5c5c;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+    }
+    p {
+        color: $gray;
+        &.firstP {
+            margin: 16px 0 22px 0;
+        }
+        &.secondP{
+            margin-bottom: 40px;
+        }
+    }
+    .Btn {
+        h5 {
+            border: 1px solid $black;
+            padding: 10px 0px 13px 22px;
+            transition: all 0.2s linear;
+            margin-bottom: 16px;
+            span {
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 2px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+            }
+            i {
+                font-size: 13px;
+                color: $gray;
+                padding-right: 14px;
+            }
+            &:hover {
+                background-color: #f3f3f3;
+                cursor: pointer;
+            }
+        }
+    }
+    .accordion {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .bg{
+        background-color:#f3f3f3;
+    }
+}
+
+@media(max-width:576px){
+    .Questions{
+        margin:140px 20px;
+        h2{
+            font-size: 34px;
+        }
+    }
+}

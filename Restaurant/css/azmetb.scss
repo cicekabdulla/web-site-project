@@ -1,0 +1,88 @@
+@import "default";
+
+$white: #fff;
+$yellow: #d49536;
+.AzKitchen {
+  display: flex;
+  // background-image: url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  height: 600px;
+  background:linear-gradient(rgba(0, 0, 0, 0.2)),url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 13px;
+    position: absolute;
+    background-image: url(http://cristianonew.ukrdevs.com/wp-content/themes/cristiano/assets/images/torn-papper2.png);
+    bottom: -7px;
+    left: 0;
+  }
+  h1 {
+    text-shadow: 2px 0 black;
+    font-size: 65px;
+    color: $white;
+    font-weight: 700;
+  
+  }
+}
+.TodayOffer {
+  padding:65px 0 25px 0;
+  @extend %Menu-List;
+  h5{
+    padding-bottom:15px;
+  }
+}
+
+.Plov-top {
+  background-image: url(https://image.freepik.com/free-photo/azerbaijani-shah-plov-lettuce-leaf-with-pomegranate_114579-3564.jpg);
+  @extend %H2;
+}
+.Plov {
+  padding-top: 50px;
+  @extend %MenuList-S;
+}
+
+.Soup-top {
+  background-image:url(https://www.oscargradylibrary.org/wp-content/uploads/2018/02/soups.jpg);
+  @extend %H2;
+}
+.Soup {
+ @extend %MenuList-S;
+}
+.Meat-top{
+  background-image:url(https://www.bakupost.az/uploads/news/800x500/2018-04/1525063348_sufrem.az-4589.jpg);
+  @extend %H2;
+}
+.Meat{
+  padding-top: 50px;
+  @extend %Menu-List;
+  h6{
+    padding-top:20px;
+  }
+}
+.Dessert-top{
+  background-image: url(https://img-s2.onedio.com/id-57028a4df29a68a53a8cea15/rev-1/w-600/h-300/o-59x42/s-15c117747fdceb26c9ae431c063a877e64040b0d.jpg);
+  @extend %H2;
+}
+.Dessert{
+  padding-top:50px;
+  @extend %Menu-List;
+}
+
+@media(max-width:992px){
+ .Plov-top,.Soup-top,.Meat-top,.Dessert-top{
+   height: 100vh!important;
+ }
+}
+@media(max-width:576px){
+  .AzKitchen{
+    h1{
+      font-size: 47px;
+    }
+  }
+}

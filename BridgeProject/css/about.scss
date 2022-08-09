@@ -1,0 +1,8 @@
+@import "default";
+$white: #fff;
+$black: #000;
+$gray: #959595;
+.Story {
+    background: url(https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/title-img-1.jpg);
+    @extend %Bg;
+}

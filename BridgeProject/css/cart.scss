@@ -1,0 +1,35 @@
+@import "default";
+
+#Cart {
+    background-image: url(https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/title-img-1.jpg);
+    @extend %Bg;
+}
+.Text {
+    padding: 50px 0;
+    p {
+        padding: 28px 21px 42px 21px;
+        font-weight: 700;
+        font-family: Raleway, sans-serif;
+        color: #303030;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+    a {
+        color: $black;
+        font-family: "Lato", sans-serif;
+        border: 1px solid $black;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-width: 1px;
+        padding: 10px 48px;
+        &:hover{
+            text-decoration: none;
+            background-color:$black;
+            color:$white;
+            transition: all .2s linear;
+        }
+    }
+}

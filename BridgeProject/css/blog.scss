@@ -1,0 +1,15 @@
+@import "default";
+
+.Blog {
+    background-image: url(https://bridge302.qodeinteractive.com/wp-content/uploads/2019/12/title-img-2.jpg);
+    @extend %Bg;
+}
+#Latest {
+    h4 {
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
