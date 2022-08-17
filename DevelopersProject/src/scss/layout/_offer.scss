@@ -2,6 +2,11 @@
     background-color: $c-light-cyan;
 
     .offer__item {
+        background: white;
+        border-radius: 15px;
+    }
+
+    .offer__main {
         background-color: $c-white;
         border-radius: 14px;
         padding: 1.2rem 2.1rem;
@@ -12,11 +17,27 @@
             margin-left: 1.5rem;
         }
     }
+
+    .offer__drop {
+        display: none;
+        padding: 0 2.1rem;
+
+        h5 {
+            margin-left: 1.5rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-left: 3rem;
+            margin-top: 1rem;
+            padding-bottom: 2rem;
+        }
+    }
 }
 
 @media(max-width:768px) {
     #offer {
-        .offer__item {
+        .offer__main {
             padding: 1.2rem 1.1rem;
         }
 
@@ -33,13 +54,21 @@
         img {
             width: 20px
         }
+
+        .offer__drop {
+            padding: 0 1.1rem;
+        }
     }
 }
 
 @media(max-width:576px) {
     #offer {
-        .offer__item {
+        .offer__main {
             padding: 1rem 0.8rem;
+        }
+
+        .offer__drop {
+            padding: 0 0.8rem;
         }
     }
 }

@@ -1,8 +1,15 @@
-'use strict';
+'use strict'
 
-const navbarBar = document.querySelector('.bar'),
-    navbarUl = document.querySelector('#navbar ul');
+import tab from './modules/tab.js'
 
-navbarBar.addEventListener('click', () => {
-    navbarUl.classList.toggle('d-flex');
+window.addEventListener('DOMContentLoaded', () => {
+    tab();
+
+    const navbarBar = document.querySelector('.bar'),
+        navbarUl = document.querySelector('#navbar ul');
+
+    navbarBar.addEventListener('click', () => {
+        navbarUl.classList.toggle('d-flex');
+    })
 })
+
