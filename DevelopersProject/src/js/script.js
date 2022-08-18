@@ -3,7 +3,11 @@
 import tab from './modules/tab.js'
 
 window.addEventListener('DOMContentLoaded', () => {
-    tab();
+    tab({
+        img:'.down__img',
+        drop:'.offer__drop',
+        rotateimg:'rotateimg'
+    });
 
     const navbarBar = document.querySelector('.bar'),
         navbarUl = document.querySelector('#navbar ul');

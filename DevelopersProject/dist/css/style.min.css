@@ -239,6 +239,11 @@ h2 {
   background-color: #DAECFF;
 }
 
+#offer .rotateimg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 #offer .offer__item {
   background: white;
   border-radius: 15px;

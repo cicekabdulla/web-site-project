@@ -1,4 +1,8 @@
 #offer {
+    .rotateimg {
+        transform: rotate(180deg);
+    }
+
     background-color: $c-light-cyan;
 
     .offer__item {
@@ -16,6 +20,7 @@
             margin-bottom: 0;
             margin-left: 1.5rem;
         }
+
     }
 
     .offer__drop {
