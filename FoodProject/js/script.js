@@ -22,6 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
         seconds: '.timer__block #seconds'
     });
 
-    slider();
+    slider({
+        slideSelector: '.offer__slide',
+        wrapperSlide: '.offer__slider-wrapper',
+        innerSlide: '.offer__slider-inner',
+        prevSlide: '.offer__slider-prev',
+        nextSlide: '.offer__slider-next',
+        currentSlide: '#current',
+        totalSlide: '#total'
+    });
 
 })

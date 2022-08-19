@@ -1,25 +1,34 @@
-function slider() {
-    const offer__slider = document.querySelector('.offer__slider'),
-        slide = document.querySelectorAll('.offer__slide'),
-        wrapper = document.querySelector('.offer__slider-wrapper'),
-        inner = document.querySelector('.offer__slider-inner'),
-        width = wrapper.offsetWidth,
-        prev = document.querySelector('.offer__slider-prev'),
-        next = document.querySelector('.offer__slider-next'),
-        current = document.querySelector('#current'),
-        total = document.querySelector('#total');
+'use strict'
+
+function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide, currentSlide, totalSlide }) {
+    const callElem = (selector) => document.querySelector(selector);
+
+    const slide = document.querySelectorAll(slideSelector),
+        wrapper = callElem(wrapperSlide),
+        inner = callElem(innerSlide),
+        prev = callElem(prevSlide),
+        next = callElem(nextSlide),
+        current = callElem(currentSlide),
+        total = callElem(totalSlide),
+        width = wrapper.offsetWidth
 
     let offset = 0, count = 1;
 
-    if (slide.length < 10) {
-        total.innerHTML = `0${slide.length}`
-    } else {
-        total.innerHTML = slide.length;
-    }
+    normalizer();
+    changeSlide();
 
-    inner.style.display = 'flex';
-    inner.style.width = width * slide.length + 'px';
-    wrapper.style.overflow = 'hidden'
+    function normalizer() {
+        if (slide.length < 10) {
+            total.innerHTML = `0${slide.length}`
+        } else {
+            total.innerHTML = slide.length;
+        }
+
+        inner.style.display = 'flex';
+        inner.style.width = width * slide.length + 'px';
+        wrapper.style.overflow = 'hidden'
+
+    }
 
     function builder() {
         inner.style.transform = `translateX(${-offset}px)`
@@ -55,8 +64,6 @@ function slider() {
             builder()
         });
     }
-
-    changeSlide();
 }
 
 export default slider;
