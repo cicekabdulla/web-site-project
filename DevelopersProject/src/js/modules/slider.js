@@ -10,6 +10,16 @@ function slider({ slidesSelector, wrapperSelector, prevSelector, nextSelector })
 
     let width = slides[0].offsetWidth, offset = 0;
 
+    window.addEventListener('resize', () => {
+        width = slides[0].offsetWidth;
+        offset = 0;
+        wrapper.style.transform = `transaletX(-${offset}px)`
+    });
+
+    function sliderDynamize() {
+        wrapper.style.transform = `transaletX(-${offset}px)` 
+    }
+    
     function changeSlide() {
         prev.addEventListener('click', () => {
             if (offset == 0) {

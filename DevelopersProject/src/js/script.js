@@ -1,15 +1,14 @@
 'use strict'
 
 import tab from './modules/tab.js';
-import slider from './modules/slider.js'
+import slider from './modules/slider.js';
+import burger from './modules/burger.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-    const navbarBar = document.querySelector('.bar'),
-        navbarUl = document.querySelector('#navbar ul');
-
-    navbarBar.addEventListener('click', () => {
-        navbarUl.classList.toggle('d-flex');
+    burger({
+        burgerSelector: '.bar',
+        navbarUlSelector: '#navbar ul'
     });
 
     tab({
@@ -19,11 +18,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     slider({
-        slidesSelector: '.services__slider-item',
-        wrapperSelector: '.services__slider-wrapper',
-        prevSelector: '.prev',
-        nextSelector: '.next'
-    })
+        slidesSelector: '#services .services__slider-item',
+        wrapperSelector: '#services .services__slider-wrapper',
+        prevSelector: '#services .slider__control .prev',
+        nextSelector: '#services .slider__control .next'
+    });
 
     slider({
         slidesSelector: '#examples .examples__slider-item',
@@ -31,5 +30,5 @@ window.addEventListener('DOMContentLoaded', () => {
         prevSelector: '#examples .slider__control .prev',
         nextSelector: '#examples .slider__control .next'
     });
-})
 
+});

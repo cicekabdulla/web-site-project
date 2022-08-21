@@ -6,7 +6,7 @@ const tab = ({ img, drop, rotateimg }) => {
         offerDrop.forEach(item => {
             item.style.display = 'none'
         })
-        // offerDrop[i].style.display = 'block'
+
         offerDrop[i].classList.toggle('d-block')
         downImg[i].classList.toggle(rotateimg)
     }
