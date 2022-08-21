@@ -733,3 +733,30 @@ a {
     opacity: 1;
   }
 }
+
+
+.offer__slider-wrapper {
+  position: relative;
+}
+
+.offer__slider-wrapper ol {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+
+.offer__slider li {
+  width: 35px;
+  height: 10px;
+  background-color: white;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.activeDot {
+  opacity: .9!important;
+}

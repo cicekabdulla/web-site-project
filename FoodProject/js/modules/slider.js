@@ -12,8 +12,32 @@ function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide,
         total = callElem(totalSlide),
         width = wrapper.offsetWidth
 
-    let offset = 0, count = 1;
+    let offset = 0, count = 1, dots = [];
 
+    const dot = document.createElement('ol');
+
+    for (let i = 0; i < 5; i++) {
+        const dotItem = document.createElement('li');
+        dots.push(dotItem);
+
+        dot.appendChild(dotItem);
+        wrapper.appendChild(dot)
+
+        if (i == 0) {
+            dotItem.classList.add('activeDot')
+        }
+
+        dotItem.addEventListener('click', () => {
+            dots.forEach(dot => {
+                dot.classList.remove('activeDot')
+            });
+
+            offset = i * width;
+            dots[i].classList.add('activeDot');
+            builder()
+        })
+    }
+    
     normalizer();
     changeSlide();
 
