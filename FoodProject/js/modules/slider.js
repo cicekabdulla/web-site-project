@@ -16,30 +16,35 @@ function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide,
 
     const dot = document.createElement('ol');
 
-    for (let i = 0; i < 5; i++) {
-        const dotItem = document.createElement('li');
-        dots.push(dotItem);
+    function dotChange() {
+        for (let i = 0; i < 5; i++) {
+            const dotItem = document.createElement('li');
+            dots.push(dotItem);
 
-        dot.appendChild(dotItem);
-        wrapper.appendChild(dot)
+            dot.appendChild(dotItem);
+            wrapper.appendChild(dot)
 
-        if (i == 0) {
-            dotItem.classList.add('activeDot')
+            if (i == 0) {
+                dotItem.classList.add('activeDot')
+            }
+
+            dotItem.addEventListener('click', () => {
+                // dots.forEach(dot => {
+                //     dot.classList.remove('activeDot')
+                // });
+                // dots[i].classList.add('activeDot');
+
+                offset = i * width;
+                count = i + 1;
+
+                builder()
+            })
         }
-
-        dotItem.addEventListener('click', () => {
-            dots.forEach(dot => {
-                dot.classList.remove('activeDot')
-            });
-
-            offset = i * width;
-            dots[i].classList.add('activeDot');
-            builder()
-        })
     }
-    
+
     normalizer();
     changeSlide();
+    dotChange();
 
     function normalizer() {
         if (slide.length < 10) {
@@ -56,13 +61,15 @@ function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide,
 
     function builder() {
         inner.style.transform = `translateX(${-offset}px)`
-        current.innerHTML = count;
 
         if (count < 10) {
             current.innerHTML = `0${count}`
         } else {
             current.innerHTML = count;
         }
+
+        dots.forEach(dot => dot.classList.remove('activeDot'));
+        dots[count - 1].classList.add('activeDot');
     }
 
     function changeSlide() {
@@ -75,6 +82,7 @@ function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide,
                 count -= 1;
             }
             builder()
+
         });
 
         next.addEventListener('click', () => {
