@@ -5,6 +5,7 @@ import card from './modules/card.js';
 import timer from './modules/timer.js';
 import slider from './modules/slider.js';
 import modal from './modules/modal.js';
+import forms from './modules/form.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     tab({
@@ -36,4 +37,5 @@ window.addEventListener('DOMContentLoaded', () => {
     modal('.header__right-block');
     modal('.offer__action');
 
+    forms()
 })
