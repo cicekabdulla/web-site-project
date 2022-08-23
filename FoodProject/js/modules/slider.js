@@ -55,7 +55,8 @@ function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide,
 
         inner.style.display = 'flex';
         inner.style.width = width * slide.length + 'px';
-        wrapper.style.overflow = 'hidden'
+        wrapper.style.overflow = 'hidden';
+        inner.style.transition = 'all 300ms linear'
 
     }
 
