@@ -4,16 +4,18 @@ const tab = ({ img, drop, rotateimg }) => {
 
     function showTabContent(i = 0) {
         offerDrop.forEach(item => {
-            item.style.display = 'none'
+            item.style.display = 'none';
         })
 
-        offerDrop[i].classList.toggle('d-block')
+        offerDrop[i].classList.toggle('d-block');
         downImg[i].classList.toggle(rotateimg)
     }
 
     downImg.forEach((item, i) => {
         item.addEventListener('click', () => {
             showTabContent(i);
+
+            item.style.transition = 'all 200ms linear';
         })
     })
 
