@@ -1,8 +1,9 @@
 'use strict'
 
+import burger from './modules/burger.js';
 import tab from './modules/tab.js';
 import slider from './modules/slider.js';
-import burger from './modules/burger.js';
+import form from './modules/form.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -30,5 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
         prevSelector: '#examples .slider__control .prev',
         nextSelector: '#examples .slider__control .next'
     });
+
+    form();
 
 });

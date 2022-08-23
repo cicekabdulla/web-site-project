@@ -28,13 +28,28 @@
                 border: 2px solid $c-blue;
             }
         }
-    }
 
-    a {
-        margin-top: .8rem;
-    }
+        button {
+            background-color: $c-green;
+            border-radius: 5px;
+            padding: 1.1rem 6rem;
+            text-transform: uppercase;
+            border: 2px solid $c-green;
+            transition: all .2s ease;
+            display: inline-block;
+            color: $c-white;
+            font-weight: 500;
+            margin-top: 46px;
 
-    @extend %main__btn;
+            &:hover {
+                border: 2px solid $c-blue;
+            }
+
+            &:active {
+                background-color: $c-blue;
+            }
+        }
+    }
 }
 
 @media(max-width:992px) {
@@ -42,23 +57,29 @@
         height: 100%;
         padding: 4rem 0;
 
-        a {
-            padding: 0.9rem 4.2rem;
+        form {
+            button {
+                padding: 0.9rem 4.2rem;
+            }
         }
     }
 }
 
 @media(max-width:576px) {
     #discuss {
-        a {
-            padding: 0.7rem 2.7rem;
-            font-size: 15px;
+        form {
+            button {
+                padding: 0.7rem 2.7rem;
+                font-size: 15px;
+            }
         }
-        p{
+
+        p {
             font-size: 16px;
         }
-        img{
-            width:250px;
+
+        img {
+            width: 250px;
         }
     }
 }
