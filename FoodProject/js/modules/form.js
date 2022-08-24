@@ -13,7 +13,7 @@ function forms() {
             const data = Object.fromEntries(new FormData(e.target));
             data.id = id;
 
-            request('http://localhost:3000/callrequest', 'POST', data)
+            request('http://localhost:3000/callrequest', 'POST', JSON.stringify(data))
         })
     })
 }

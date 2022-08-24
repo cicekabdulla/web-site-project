@@ -6,6 +6,7 @@ import timer from './modules/timer.js';
 import slider from './modules/slider.js';
 import modal from './modules/modal.js';
 import forms from './modules/form.js';
+import calc from './modules/calc.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     tab({
@@ -37,5 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     modal('.header__right-block');
     modal('.offer__action');
 
-    forms()
+    forms();
+
+    calc();
 })

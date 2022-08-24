@@ -29,11 +29,6 @@ function slider({ slideSelector, wrapperSlide, innerSlide, prevSlide, nextSlide,
             }
 
             dotItem.addEventListener('click', () => {
-                // dots.forEach(dot => {
-                //     dot.classList.remove('activeDot')
-                // });
-                // dots[i].classList.add('activeDot');
-
                 offset = i * width;
                 count = i + 1;
 
