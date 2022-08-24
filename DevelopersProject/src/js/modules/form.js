@@ -12,7 +12,7 @@ function form() {
         const id = new Date().getTime().toString().slice(7, 14);
         const data = Object.fromEntries(new FormData(e.target));
         data.id = id;
-        request('http://localhost:3000/callRequest', 'POST', data)
+        request('http://localhost:3000/callRequest', 'POST', JSON.stringify(data))
     })
 }
 

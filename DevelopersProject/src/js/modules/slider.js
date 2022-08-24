@@ -13,13 +13,13 @@ function slider({ slidesSelector, wrapperSelector, prevSelector, nextSelector })
     window.addEventListener('resize', () => {
         width = slides[0].offsetWidth;
         offset = 0;
-        wrapper.style.transform = `transaletX(-${offset}px)`
+        sliderDynamize()
     });
 
     function sliderDynamize() {
-        wrapper.style.transform = `transaletX(-${offset}px)` 
+        wrapper.style.transform = `translateX(-${offset}px)`
     }
-    
+
     function changeSlide() {
         prev.addEventListener('click', () => {
             if (offset == 0) {
@@ -28,8 +28,8 @@ function slider({ slidesSelector, wrapperSelector, prevSelector, nextSelector })
                 offset -= width
             }
 
-            wrapper.style.transform = `translateX(-${offset}px)`
-        })
+            sliderDynamize()
+        });
 
         next.addEventListener('click', () => {
             if (offset == width * (slides.length - 1)) {
@@ -38,8 +38,7 @@ function slider({ slidesSelector, wrapperSelector, prevSelector, nextSelector })
                 offset += width;
             }
 
-            console.log(offset)
-            wrapper.style.transform = `translateX(-${offset}px)`
+            sliderDynamize()
         });
     }
 

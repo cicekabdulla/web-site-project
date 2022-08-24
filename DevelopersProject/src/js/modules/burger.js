@@ -5,6 +5,7 @@ function burger({ burgerSelector, navbarUlSelector }) {
 
     burger.addEventListener('click', () => {
         navbarUl.classList.toggle('d-flex');
+        
     })
 }
 
