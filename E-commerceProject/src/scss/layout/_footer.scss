@@ -1,0 +1,71 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 70px 0 40px 0;
+    margin-top: 90px;
+
+    h6 {
+        color: $gray;
+        margin-bottom: 15px;
+    }
+
+    a {
+        color: $black;
+        transition: all .2s linear;
+        font-size: 14px;
+
+        &:hover {
+            color: $skyblue;
+        }
+    }
+
+    .facebook:hover {
+        color: #446ebf;
+    }
+
+    .twitter:hover {
+        color: #39aadc;
+    }
+
+    .vimeo:hover {
+        color: #15c9f5;
+    }
+
+    .instagram:hover {
+        color: #95604b;
+    }
+
+    .youtube:hover {
+        color: #ee423d;
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    .footer__bottom {
+        margin-top: 60px;
+
+        a {
+            margin-right: 20px;
+        }
+
+    }
+
+    .copyright {
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 10px;
+
+        a {
+            font-weight: 400;
+        }
+    }
+}
+
+@media(max-width:300px) {
+    footer {
+        img {
+            width: 160px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+form {
+    .form__row {
+        position: relative;
+        margin-bottom: 54px;
+
+        input,
+        textarea {
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #00000069;
+            transition: all .2s linear;
+        }
+
+        input:focus~label {
+            top: -24px;
+        }
+
+        textarea {
+            resize: none;
+            min-height: 160px;
+        }
+
+        textarea:focus~label {
+            top: -24px;
+        }
+
+        &.textarea {
+            margin-bottom: 32px;
+        }
+    }
+
+    button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        padding: 12px 40px;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
+        color: $white;
+        background: $black;
+        border: none;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: $skyblue;
+        }
+    }
+}

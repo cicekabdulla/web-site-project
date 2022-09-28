@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product – Kona</title>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- HEADER started-->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4 d-none d-lg-flex">
+                    <ul class="d-lg-flex gap-4">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li class="mainlast_li"><a href="#" class="activeColor">Pages</a>
+                            <ul class="submenu">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="#" class="activeColor">Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 d-lg-none">
+                    <i class="fa-solid fa-bars hamburger"></i>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="logo"><a href="index.html"><img src="src/resources/img/logowhite.png" alt=""></a></div>
+                </div>
+                <div class="col-4 d-flex gap-4 justify-content-end
+                        align-items-center header-right">
+                    <div class="d-none d-md-flex header__login"><a href="#">Login</a></div>
+                    <div class="header__search d-none d-md-flex"><a href="#"><i class="fa-solid
+                                    fa-magnifying-glass"></i></a></div>
+                    <div class="header__cart"><a href="cart.html"><span>0</span></a></div>
+                </div>
+            </div>
+            <div class="hamburger__menu">
+                <ul class="d-lg-none gap-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li class="mainlast_li"><a href="#" class="activeColor">Pages<i
+                                class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                        <ul class="hamburger__submenu">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="#" class="activeColor">Product</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="d-flex d-lg-none gap-3 social">
+                    <li><a href="#" class="facebook"><i class="fa-brands
+                                fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa-brands
+                                fa-twitter"></i></a></li>
+                    <li><a href="#" class="vimeo"><i class="fa-brands
+                                fa-vimeo-v "></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fa-brands
+                                fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__search-open">
+            <div class="container">
+                <div class="search__inner">
+                    <a href="#" class="search__close"><i class="fa-solid fa-xmark"></i></a>
+                    <form action="">
+                        <input name="name" type="text" placeholder="Type your search here" autofocus="autofocus">
+                    </form>
+                </div>
+            </div>
+
+            <div class="search__products">
+                <div class="container">
+
+                    <div class="d-flex justify-content-end">
+                        <div class="status__message gap-3">
+                            <h6></h6>
+                            <a href="cart.html">View Cart</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-4 product__wrap mt-5">
+                        <!-- <div class="product__item">
+                            <div class="product__img">
+                                <img src="src/resources/img/kona-thumb-2.jpg" alt="">
+                                <div class="product__overlay">
+                                    <a href="#"> <span>Add to cart</span><i class="fa-solid
+                                        fa-arrow-right-long"></i></a>
+
+                                </div>
+                            </div>
+                            <div class="product__content">
+                                <h6>Blacky Strappy</h6>
+                                <span>$24.00</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- HEADER ended -->
+
+    <section id="product">
+        <div class="container">
+            <div class="row justify-content-center gap-5">
+                
+                <div class="loader">
+                    <img src="src/resources/img/loading.gif" alt="">
+                </div>
+
+                <div class="col-lg-5 col-md-6">
+                    <img class="product__image" src="" alt="">
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="product__right">
+                        <h1 class="product__title"></h1>
+                        <span class="product__price"></span>
+                        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his
+                            bed into a horrible vermin. The bedding was hardly able to cover it and seemed ready to
+                            slide off any moment.</p>
+                        <div class="product__addcart d-flex align-items-center gap-5">
+                            <div class="quantity__wrapper">
+                                <span>1</span>
+                            </div>
+                            <a href="#" class="product__addcart">
+                                <span>Add to cart</span>
+                                <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                        <!-- <div class="product__meta">
+                            <span>SKU: 87893-AB</span>
+                            <span>Categories: <a href="#">Men</a>, <a href="#">Shirt</a></span>
+                            <span>Tags: <a href="#">man</a>, <a href="#">marine</a>, <a href="#">shirt</a></span>
+                        </div> -->
+                        <div class="product__social d-flex align-items-center gap-4">
+                            <span>Share</span>
+                            <ul class="d-flex gap-3">
+                                <li><a href="#" class="facebook"><i class="fa-brands
+                                    fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="twitter"><i class="fa-brands
+                                    fa-twitter"></i></a></li>
+                                <li><a href="#" class="google"><i class="fa-brands 
+                                    fa-google-plus-g"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa-brands 
+                                    fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tab">
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tab__nav d-md-flex justify-content-center gap-5">
+                    <div class="tab__item  text-center tab__item-active">Description</div>
+                    <div class="tab__item text-center ">Additional information</div>
+                    <div class="tab__item text-center ">Reviews (2)</div>
+                </div>
+                <div class="tab__content">
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                        into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he
+                        could
+                        see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was
+                        hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin
+                        compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened
+                        to
+                        me?” he thought.</p>
+                </div>
+                <div class="tab__content">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Color</th>
+                                <td>Black</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>XS, S, M, L, XL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab__content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="comment__list d-flex  gap-3">
+                                    <div><img src="src/resources/img/review.png" alt=""></div>
+                                    <div class="comment__content">
+                                        <h6>Jimi</h6>
+                                        <span>August 1, 2018</span>
+                                        <div>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>A small river named Duden flows by their place and supplies it with the
+                                            necessary regelialia.</p>
+                                    </div>
+                                </div>
+                                <div class="comment__list d-flex  gap-3">
+                                    <div><img src="src/resources/img/review.png" alt=""></div>
+                                    <div class="comment__content">
+                                        <h6>Jacky</h6>
+                                        <span>August 1, 2018</span>
+                                        <div>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                            Commas, wild Question Marks and devious Semikoli.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mt-4 mt-md-0">
+                                <h4>Add a review</h4>
+                                <div class="review">
+                                    <div class="review__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <form action="">
+                                        <div class="form__row textarea">
+                                            <textarea></textarea>
+                                            <label for="">Your Review *</label>
+                                        </div>
+                                        <div class="form__row">
+                                            <input type="text">
+                                            <label for="">Name *</label>
+                                        </div>
+                                        <div class="form__row">
+                                            <input type="text">
+                                            <label for="">Email *</label>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products related__products">
+        <div class="container">
+            <h4>Related Products</h4>
+
+            <div class="d-flex justify-content-end">
+                <div class="status__message gap-3">
+                    <h6></h6>
+                    <a href="cart.html">View Cart</a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between product__wrap mt-5">
+                <div class="loader">
+                    <img src="src/resources/img/loading.gif" alt="">
+                </div>
+                <div class="errormes"></div>
+
+                <!-- <div class="product__item">
+                    <div class="product__img">
+                        <img src="src/resources/img/kona-thumb-21.jpg" alt="">
+                        <div class="product__overlay">
+                            <a href="#"> <span>Add to cart</span><i class="fa-solid
+                                    fa-arrow-right-long"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="product__content">
+                        <h6>Modern Shirt</h6>
+                        <span>$45.00</span>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER started -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-2">
+                    <h6>About us</h6>
+                    <ul>
+                        <li><a href="#">Our company</a></li>
+                        <li><a href="#">Our history</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Store Locations</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-5 mt-md-0">
+                    <h6>How can we help</h6>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Order tracking</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-5 mt-md-0">
+                    <h6>Shop</h6>
+                    <ul>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shirt</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 mt-5 mt-md-0">
+                    <h6>Follow us</h6>
+                    <ul class="d-flex gap-3 social">
+                        <li><a href="#" class="facebook"><i class="fa-brands
+                                        fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa-brands
+                                        fa-twitter"></i></a></li>
+                        <li><a href="#" class="vimeo"><i class="fa-brands
+                                        fa-vimeo-v "></i></a></li>
+                        <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="youtube"><i class="fa-brands
+                                        fa-youtube"></i></a></li>
+                    </ul>
+                    <h6 class="mt-5">Payment Options</h6>
+                    <img src="src/resources/img/payment@2x.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <a href="#" class="d-block d-sm-inline mb-2">Terms and
+                    Conditions</a>
+                <a href="#" class="d-block d-sm-inline mb-2">Privacy and
+                    Cookie policy</a>
+                <a href="#" class="d-block d-sm-inline">Help Center</a>
+            </div>
+            <div class="copyright">
+                © 2018 by Kona - Made by <a href="#">Spab Rice</a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ended -->
+
+    <!-- <script type="module" src="src/js/script.js"></script>
+    <script src="src/js/pages/tab/index.js"></script> -->
+    <script type="module" src="src/js/pages/product/main.js"></script>
+</body>
+
+</html>

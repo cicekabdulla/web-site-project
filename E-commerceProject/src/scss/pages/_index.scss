@@ -1,0 +1,218 @@
+//SLIDER started
+.home__slider-wrapper {
+    position: relative;
+
+    .home__slide {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .home__slide-content {
+            position: absolute;
+            top: 0;
+            left: 40px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-weight: 600;
+                font-size: 50px;
+                color: $white;
+            }
+        }
+    }
+
+    ul {
+        position: absolute;
+        bottom: 30%;
+        left: 20px;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 10px;
+
+        li {
+            width: 40px;
+            height: 10px;
+            border-radius: 1px;
+            background-color: rgba(255, 255, 255, 0.8);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .activeDot {
+        background-color: black;
+    }
+}
+
+//  SLIDER ended
+
+//DISCOVER started
+#discover {
+    padding: 24px 0;
+
+    .discover__item {
+        position: relative;
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        .discover__img {
+            overflow: hidden;
+
+            img {
+                transition: all .2s linear;
+            }
+        }
+
+        .discover__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h5 {
+                font-size: 2rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.03);
+            }
+        }
+
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+//DISCOVER ended
+
+//COATS started
+#coats {
+    background-image: url('http://spab-rice.com/wordpress/kona/demo/wp-content/uploads/2018/09/hero-30.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0 80px 0;
+
+    h1 {
+        font-weight: 600;
+        font-size: 60px;
+        color: $white;
+        text-align: center;
+    }
+
+    .spacer {
+        height: 90px;
+    }
+
+    .overlay {
+        background-color: $white;
+        border-radius: 30px;
+        width: 125px;
+        text-align: center;
+        line-height: 40px;
+
+        a {
+            color: $black;
+            font-size: 14px;
+            font-weight: 600;
+
+            span {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
+
+// COATS ended
+
+//ADVANTAGES started
+#advantages {
+    margin-bottom: 50px;
+
+    i {
+        font-size: 25px;
+    }
+
+    h6 {
+        margin-top: 30px;
+    }
+}
+
+//ADVANTAGES ended
+
+@media(max-width:992px) {
+    // .home__slider-wrapper {
+    //     .home__slide {
+    //         .home__slide-content {
+    //             align-items: flex-start;
+    //         }
+    //     }
+    // }
+
+    #coats {
+        h1 {
+            font-size: 54px;
+        }
+
+        .spacer {
+            height: 60px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    #coats {
+        h1 {
+            font-size: 44px;
+        }
+
+        .spacer {
+            height: 56px;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .home__slider-wrapper {
+        .home__slide {
+            .home__slide-content {
+                h1 {
+                    font-size: 36px;
+                    padding-top: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        ul {
+            bottom: 16%;
+        }
+    }
+}
